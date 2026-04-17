@@ -1,0 +1,26 @@
+diff --git a/package.json b/package.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..0d8aa31a255f1b1ef86727b7039670e2a6e29051
+--- /dev/null
++++ b/package.json
+@@ -0,0 +1,20 @@
++{
++  "name": "asterisk-creatio-bridge",
++  "version": "1.0.0",
++  "description": "Backend bridge between Asterisk AMI, Creatio CRM and WebSocket clients",
++  "main": "src/index.js",
++  "type": "module",
++  "engines": {
++    "node": ">=20.11.1"
++  },
++  "scripts": {
++    "start": "node src/index.js",
++    "dev": "node --watch src/index.js",
++    "check": "node --check src/index.js"
++  },
++  "dependencies": {
++    "dotenv": "^16.4.5",
++    "express": "^4.19.2",
++    "ws": "^8.18.0"
++  }
++}
